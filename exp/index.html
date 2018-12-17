@@ -29,7 +29,10 @@
         sceneModePicker: false,
         baseLayerPicker: false,
         navigationHelpButton: false,
-        fullscreenButton: false
+        fullscreenButton: false,
+        imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
+          url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
+        })
       })
       viewer.terrainProvider = Cesium.createWorldTerrain()
       viewer.infoBox.destroy()
