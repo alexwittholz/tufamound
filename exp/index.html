@@ -32,10 +32,11 @@
         fullscreenButton: false,
         imageryProvider: new Cesium.ArcGisMapServerImageryProvider({
           url: 'https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer'
-        })
+        }),
+        terrainProvider: Cesium.createWorldTerrain(),
+        infoBox: false
       })
-      viewer.terrainProvider = Cesium.createWorldTerrain()
-      viewer.infoBox.destroy()
+      // viewer.infoBox.destroy()
 
       // Create an initial camera view
       var initialPosition = new Cesium.Cartesian3.fromDegrees(-125.734, 61.52, 5000)
