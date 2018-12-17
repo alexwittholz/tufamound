@@ -31,7 +31,7 @@
         navigationHelpButton: false,
         fullscreenButton: false
       })
-
+      viewer.terrainProvider = Cesium.createWorldTerrain();
       viewer.infoBox.destroy()
 
       // Create an initial camera view
@@ -63,7 +63,8 @@
       //
       // viewer.camera.lookAt(center, new Cesium.HeadingPitchRange(heading, pitch, range))
 
-      viewer.entities.add({
+      viewer.entities.add(
+      {
         name: 'Virginia Falls',
         position: Cesium.Cartesian3.fromDegrees(-125.7356, 61.6081),
         point: {
