@@ -184,6 +184,7 @@
 
       next.addEventListener('click', function() {
         var nextIndex = typeof currentEntity === 'number' ? currentEntity + 1 : 0
+
         var point = pointsOfInterest[nextIndex] || pointsOfInterest[0]
 
         flyToEntity(entities[point.id])
