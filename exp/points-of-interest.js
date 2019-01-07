@@ -5,7 +5,7 @@ window.pointsOfInterest = (function() {
       name: 'Bunny Bar',
       position: {
         lng: -127.3257,
-        lat: 62.02515,
+        lat: 62.029,
         height: 500
       }
     },
