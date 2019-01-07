@@ -1,15 +1,31 @@
 window.pointsOfInterest = (function() {
   return [
     {
-      id: 'bunny-bar',
-      name: 'Bunny Bar',
+      id: 'fairy-meadows',
+      name: 'Fairy Meadows',
       position: {
-        lng: -127.3257,
-        lat: 62.029,
+        lng: -127.66,
+        lat: 62.1,
         height: 500
       },
       offset: {
-        heading: 100
+        heading: 320,
+        pitch: 0,
+        roll: 0
+      }
+    },
+    {
+      id: 'bunny-bar',
+      name: 'Bunny Bar',
+      position: {
+        lng: -127.325,
+        lat: 62.0285,
+        height: 500
+      },
+      offset: {
+        heading: 100,
+        pitch: -10,
+        roll: -10
       }
     },
     {
@@ -30,11 +46,14 @@ window.pointsOfInterest = (function() {
       position: {
         lng: -125.91153,
         lat: 61.67374,
-        height: 500
+        height: 50
       },
       offset: {
         heading: 100,
-        pitch: -10
+        pitch: -10,
+        roll: -10
+
+
       }
     },
     {
