@@ -7,6 +7,9 @@ window.pointsOfInterest = (function() {
         lng: -127.3257,
         lat: 62.029,
         height: 500
+      },
+      offset: {
+        heading: 100
       }
     },
     {
@@ -16,6 +19,9 @@ window.pointsOfInterest = (function() {
         lng: -127.18046,
         lat: 61.94179,
         height: 500
+      },
+      offset: {
+        heading: -100
       }
     },
     {
@@ -25,6 +31,10 @@ window.pointsOfInterest = (function() {
         lng: -125.91153,
         lat: 61.67374,
         height: 500
+      },
+      offset: {
+        heading: 100,
+        pitch: -10
       }
     },
     {

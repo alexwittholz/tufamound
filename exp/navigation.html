@@ -85,14 +85,22 @@
       })
       var entities = {}
       var currentEntity = null
+
+      var origin = {
+        heading: 7.1077496389876024807,
+        pitch: -31.987223091598949054,
+        roll: 0
+      }
       // viewer.infoBox.destroy()
 
       // Create an initial camera view
       var initialPosition = new Cesium.Cartesian3.fromDegrees(-126.7, 60.7, 8000)
       var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(
-        7.1077496389876024807,
-        -21.987223091598949054,
-        0.025883251314954971306
+
+
+        origin.heading,
+        origin.pitch,
+        origin.roll
       )
       var homeCameraView = {
         destination: initialPosition,
@@ -109,10 +117,12 @@
         viewer.scene.camera.flyTo(homeCameraView)
       })
 
-      function getEntityIndex(id) {
-        return window.pointsOfInterest.findIndex(function(point) {
+      function getLocation(id) {
+        const index = window.pointsOfInterest.findIndex(function(point) {
           return point.id === id
         })
+
+        return { data: window.pointsOfInterest[index], index }
       }
 
       function addToMenu(entity) {
@@ -126,17 +136,24 @@
       }
 
       function flyToEntity(entity) {
+        var location = getLocation(entity.id)
+        var cameraOffset = location.data.offset || {}
+        var offset = Cesium.HeadingPitchRoll.fromDegrees(
+          cameraOffset.heading || origin.heading,
+          cameraOffset.pitch || origin.pitch,
+          0
+        )
         viewer
           .flyTo(entity, {
             maximumHeight: 10000,
             offset: {
-              heading: initialOrientation.heading,
-              pitch: initialOrientation.pitch,
+              heading: offset.heading,
+              pitch: offset.pitch,
               range: 10000
             }
           })
           .then(function() {
-            currentEntity = getEntityIndex(entity.id)
+            currentEntity = location.index
           })
       }
 
@@ -185,6 +202,7 @@
 
       next.addEventListener('click', function() {
         var nextIndex = typeof currentEntity === 'number' ? currentEntity + 1 : 0
+
         var point = pointsOfInterest[nextIndex] || pointsOfInterest[0]
 
         flyToEntity(entities[point.id])
