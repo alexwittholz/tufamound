@@ -6,22 +6,7 @@
 		<name>Placemarkers</name>
 		<Placemark>
 			<name>HOME,Alt:300.0m</name>
-			<StyleMap>
-				<Pair>
-					<key>normal</key>
-					<Style><IconStyle>
-						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
-					</IconStyle></Style>
-				</Pair>
-				<Pair>
-					<key>highlight</key>
-					<Style><IconStyle>
-						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
-					</IconStyle></Style>
-				</Pair>
-			</StyleMap>
+
 			<Point>
 				<altitudeMode>absolute</altitudeMode>
 				<coordinates>-125.67949830655455,61.599052734101576,300.0</coordinates>
@@ -36,14 +21,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -61,14 +46,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -86,14 +71,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -111,14 +96,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -136,14 +121,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -161,14 +146,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -186,14 +171,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -211,14 +196,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -236,14 +221,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -261,14 +246,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -286,14 +271,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -311,14 +296,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -336,14 +321,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -361,14 +346,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -386,14 +371,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -411,14 +396,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -436,14 +421,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -461,14 +446,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -486,14 +471,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -511,14 +496,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -536,14 +521,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -561,14 +546,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -586,14 +571,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -611,14 +596,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -636,14 +621,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -661,14 +646,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -686,14 +671,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -711,14 +696,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -736,14 +721,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -761,14 +746,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -786,14 +771,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -811,14 +796,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -836,14 +821,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -861,14 +846,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -886,14 +871,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -911,14 +896,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -936,14 +921,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -961,14 +946,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -986,14 +971,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1011,14 +996,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1036,14 +1021,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1061,14 +1046,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1086,14 +1071,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1111,14 +1096,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>
@@ -1136,14 +1121,14 @@
 					<key>normal</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/blu-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 				<Pair>
 					<key>highlight</key>
 					<Style><IconStyle>
 						<scale>1</scale>
-						<Icon><href>http://planner.paperdrone.com/images/cesium/ylw-blank.png</href></Icon>
+						
 					</IconStyle></Style>
 				</Pair>
 			</StyleMap>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <head>
+    <script src="https://cesiumjs.org/releases/1.52/Build/Cesium/Cesium.js"></script>
+    <link
+      href="https://cesiumjs.org/releases/1.52/Build/Cesium/Widgets/widgets.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="cesiumContainer" style="width: 100%; height: 100%"></div>
+
+    <script>
+      var viewer = new Cesium.Viewer('cesiumContainer', {
+        shouldAnimate: true
+      })
+
+      var statusDisplay = document.createElement('div')
+      var fuelDisplay = document.createElement('div')
+      var czmlPath = 'data/'
+      var vehicleEntity
+
+      // Add a blank CzmlDataSource to hold our multi-part entity/entities.
+      var dataSource = new Cesium.CzmlDataSource()
+      viewer.dataSources.add(dataSource)
+
+      // This demo shows how a single path can be broken up into several CZML streams.
+      var partsToLoad = [
+        {
+          url: 'MultipartVehicle_part1.czml',
+          range: [0, 1500],
+          requested: false,
+          loaded: false
+        },
+        {
+          url: 'MultipartVehicle_part2.czml',
+          range: [1500, 3000],
+          requested: false,
+          loaded: false
+        },
+        {
+          url: 'MultipartVehicle_part3.czml',
+          range: [3000, 4500],
+          requested: false,
+          loaded: false
+        }
+      ]
+
+      function updateStatusDisplay() {
+        var msg = ''
+        partsToLoad.forEach(function(part) {
+          msg += part.url + ' - '
+          if (part.loaded) {
+            msg += 'Loaded.<br/>'
+          } else if (part.requested) {
+            msg += 'Loading now...<br/>'
+          } else {
+            msg += 'Not needed yet.<br/>'
+          }
+        })
+        statusDisplay.innerHTML = msg
+      }
+
+      // Helper function to mark a part as requested, and process it into the dataSource.
+      function processPart(part) {
+        part.requested = true
+        updateStatusDisplay()
+        dataSource.process(czmlPath + part.url).then(function() {
+          part.loaded = true
+          updateStatusDisplay()
+
+          // Follow the vehicle with the camera.
+          if (!viewer.trackedEntity) {
+            viewer.trackedEntity = vehicleEntity = dataSource.entities.getById('Vehicle')
+          }
+        })
+      }
+
+      // Load the first part up front.
+      processPart(partsToLoad[0])
+
+      // Load a new section before the clock naturally gets there.
+      // Note this can't predict when a user may fast-forward to it.
+      var preloadTimeInSeconds = 100
+
+      // viewer.clock.onTick.addEventListener(function(clock) {
+      //   // This example uses time offsets from the start to identify which parts need loading.
+      //   var timeOffset = Cesium.JulianDate.secondsDifference(clock.currentTime, clock.startTime)
+
+      //   // Filter the list of parts to just the ones that need loading right now.
+      //   // Then, process each part that needs loading.
+      //   partsToLoad
+      //     .filter(function(part) {
+      //       return (
+      //         !part.requested &&
+      //         timeOffset >= part.range[0] - preloadTimeInSeconds &&
+      //         timeOffset <= part.range[1]
+      //       )
+      //     })
+      //     .forEach(function(part) {
+      //       // processPart(part)
+      //     })
+      // })
+
+      viewer.clock.onTick.addEventListener(function(clock) {
+        if (!vehicleEntity) {
+          return
+        }
+
+        //get 2 positions close together timewise
+        var CC3 = Cesium.Cartesian3
+        var position1 = vehicleEntity.position.getValue(clock.currentTime, new CC3())
+        var position2 = vehicleEntity.position.getValue(
+          Cesium.JulianDate.addSeconds(clock.currentTime, 1 / 60, new Cesium.JulianDate()),
+          new CC3()
+        )
+
+        //velocity in terms of Earth Fixed
+        var Wvelocity = CC3.subtract(position2, position1, new CC3())
+        CC3.normalize(Wvelocity, Wvelocity)
+        var Wup = new CC3()
+        var Weast = new CC3()
+        var Wnorth = new CC3()
+        Cesium.Ellipsoid.WGS84.geodeticSurfaceNormal(position1, Wup)
+        CC3.cross({ x: 0, y: 0, z: 1 }, Wup, Weast)
+        CC3.cross(Wup, Weast, Wnorth)
+
+        //velocity in terms of local ENU
+        var Lvelocity = new CC3()
+        Lvelocity.x = CC3.dot(Wvelocity, Weast)
+        Lvelocity.y = CC3.dot(Wvelocity, Wnorth)
+        Lvelocity.z = CC3.dot(Wvelocity, Wup)
+
+        //angle of travel
+        var Lup = new CC3(0, 0, 1)
+        var Least = new CC3(1, 0, 0)
+        var Lnorth = new CC3(0, 1, 0)
+        var x = CC3.dot(Lvelocity, Least)
+        var y = CC3.dot(Lvelocity, Lnorth)
+        var z = CC3.dot(Lvelocity, Lup)
+        var angle = Math.atan2(x, y) //math: y b4 x, heading: x b4 y
+        var pitch = Math.asin(z) //make sure Lvelocity is unitized
+
+        //angles offsets
+        angle += (0 / 180) * Math.PI
+        pitch += (-10 / 180) * Math.PI
+
+        var range = 100
+        var offset = new Cesium.HeadingPitchRange(angle, pitch, range)
+        viewer.scene.camera.lookAt(vehicleEntity.position.getValue(clock.currentTime), offset)
+      })
+    </script>
+  </body>
+</html>
