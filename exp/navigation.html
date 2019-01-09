@@ -2,6 +2,7 @@
 <html lang="en">
   <meta charset="utf-8" />
   <head>
+
     <script src="https://cesiumjs.org/releases/1.52/Build/Cesium/Cesium.js"></script>
     <link
       href="https://cesiumjs.org/releases/1.52/Build/Cesium/Widgets/widgets.css"
@@ -87,14 +88,16 @@
 
       var origin = {
         heading: 7.1077496389876024807,
-        pitch: -31.987223091598949054,
+        pitch: -90,
         roll: 0
       }
       // viewer.infoBox.destroy()
 
       // Create an initial camera view
-      var initialPosition = new Cesium.Cartesian3.fromDegrees(-126.7, 60.7, 80000)
+      var initialPosition = new Cesium.Cartesian3.fromDegrees(-126.6, 61.8, 150000)
       var initialOrientation = new Cesium.HeadingPitchRoll.fromDegrees(
+
+
         origin.heading,
         origin.pitch,
         origin.roll
@@ -142,11 +145,11 @@
         )
         viewer
           .flyTo(entity, {
-            maximumHeight: 10000,
+            maximumHeight: 8000,
             offset: {
               heading: offset.heading,
               pitch: offset.pitch,
-              range: 10000
+              range: 8000
             }
           })
           .then(function() {
@@ -171,11 +174,11 @@
           },
           label: {
             text: point.name,
-            font: '14pt helvetica',
+            font: '14pt IM Fell English',
             style: Cesium.LabelStyle.FILL_AND_OUTLINE,
             outlineWidth: 2,
-            verticalOrigin: Cesium.VerticalOrigin.BOTTOM,
-            pixelOffset: new Cesium.Cartesian2(0, -9)
+            verticalOrigin: Cesium.VerticalOrigin.TOP,
+            pixelOffset: new Cesium.Cartesian2(0, 10)
           }
         })
 
