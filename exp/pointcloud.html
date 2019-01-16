@@ -64,6 +64,16 @@
       })
     })
 
+    var imageryLayers = viewer.imageryLayers
+    var layer = imageryLayers.get(0)
+
+//  layer.alpha      = 1.0 // default: 1.0
+    layer.brightness = 1.0 // default: 1.0
+    layer.contrast   = 0.2 // default: 1.0
+//  layer.hue        = 0.0 // default: 0.0
+    layer.saturation = 0.0 // default: 1.0
+    layer.gamma      = 0.5 // default: 1.0
+
     viewer.clock.currentTime = Cesium.JulianDate.fromIso8601("2018-07-15T12:00:00-0500")
 
     var scene = viewer.scene
@@ -75,12 +85,12 @@
 
     var fog = scene.fog
     fog.enabled = true
-    fog.density = 0.0010 // higher density = less detail at distance
+    fog.density = 0.0001 // higher density = less detail at distance
 
     var tileset = scene.primitives.add(
       new Cesium.Cesium3DTileset({
         url: Cesium.IonResource.fromAssetId(13953),
-        maximumScreenSpaceError: 0.5, // lower number = higher detail
+        maximumScreenSpaceError: 0.5 // lower number = higher detail
       })
     )
 
@@ -97,8 +107,7 @@
     })
 
     tileset.style = new Cesium.Cesium3DTileStyle({
-      pointSize: '3',
-      //sunLighting: true
+      pointSize: '3'
     })
 
     viewer.zoomTo(tileset, new Cesium.HeadingPitchRange(2.3, -0.3, 300))
