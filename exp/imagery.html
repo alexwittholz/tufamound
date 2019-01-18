@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="https://cesiumjs.org/releases/1.52/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesiumjs.org/releases/1.52/Build/Cesium/Widgets/widgets.css" rel="stylesheet">
+
+  <style>
+    html,
+    body {
+      background: black;
+      height: 100%;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer" style="width: 50%; height: 100%;"></div>
+  <script>
+
+    Cesium.Ion.defaultAccessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI3N2JjOGQzZS0xN2RmLTQ1ZDItYmNlNS0xMDQ1ZjFmZjE5ZWYiLCJpZCI6NjAzNywic2NvcGVzIjpbImFzciIsImdjIl0sImlhdCI6MTU0NTA3Mzc5N30.uvhCg_YBZgpT7l5gBqLDqrXm_JXQ4H2UXoKssltb5q0'
+
+    var viewer = new Cesium.Viewer('cesiumContainer', {
+      animation: false,
+      baseLayerPicker: false,
+      fullscreenButton: false,
+      geocoder: false,
+      infoBox: false,
+      navigationHelpButton: false,
+      sceneModePicker: false,
+      selectionIndicator: false,
+      shadows: true,
+      terrainShadows: Cesium.ShadowMode.ENABLED,
+      timeline: false,
+      imageryProvider: new Cesium.UrlTemplateImageryProvider({
+        url: 'http://tile.stamen.com/terrain-background/{z}/{x}/{y}.jpg',
+        credit: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+      }),
+      terrainProvider: Cesium.createWorldTerrain({
+        requestVertexNormals: true
+      })
+    })
+
+    viewer.clock.currentTime = Cesium.JulianDate.fromIso8601("2018-07-15T12:00:00-0500")
+
+    var scene = viewer.scene
+    scene.highDynamicRange = false
+    scene.screenSpaceCameraController.enableZoom = false
+
+    var globe = scene.globe
+    globe.enableLighting = true
+
+    var layers = scene.imageryLayers
+    var map = layers.get(0)
+
+    map.alpha      = 1.0 // default: 1.0
+    map.brightness = 1.0 // default: 1.0
+    map.contrast   = 1.0 // default: 1.0
+    map.hue        = 0.0 // default: 0.0
+    map.saturation = 1.0 // default: 1.0
+    map.gamma      = 1.0 // default: 1.0
+
+    scene.camera.setView({
+      destination: new Cesium.Cartesian3.fromDegrees(
+        -124.852831,
+        61.274387,
+        55000
+      )
+    })
+
+  </script>
+</body>
+</html>
